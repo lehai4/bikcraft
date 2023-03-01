@@ -1,0 +1,122 @@
+$white-color: #fff;
+$hover-txt: #1e4c88;
+$hover-white: #fff;
+$txt-color: #000;
+////////////////////////////////
+#header-bicycle-page {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 96px;
+  z-index: 100;
+}
+#header-bicycle-page {
+  background-color: $txt-color;
+}
+// Inner
+.header-bicycle-page-inner {
+  height: 100%;
+}
+
+.header__menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 28px;
+  &__left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      cursor: pointer;
+    }
+  }
+  &__right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include mobile {
+      display: none;
+    }
+    &__navigation {
+      margin: 0 20px 0 0;
+      &__item__text {
+        position: relative;
+      }
+    }
+  }
+}
+
+.header__menu__left__navigation > ul,
+.header__menu__right__navigation > ul {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.header__menu__left__navigation__item__text::before,
+.header__menu__right__navigation__item__text::before {
+  content: "";
+  position: absolute;
+  background: $white-color;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  transition: width 0.3s;
+}
+.header__menu__left__navigation__item__text:hover::before,
+.header__menu__right__navigation__item__text:hover::before {
+  width: 100%;
+}
+
+.refer__header__navigation ul {
+  margin: 0 !important;
+  padding: 0;
+  list-style: none;
+  line-height: 0;
+}
+.refer__header__navigation ul li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.refer__header__navigation > ul > li:first-child {
+  margin-left: 10px;
+}
+.refer__header__navigation > ul > li {
+  height: 100%;
+  margin: 0 20px;
+}
+.refer__header__navigation > ul > li > a {
+  position: relative;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+  color: $white-color;
+}
+.refer__header__navigation > ul > li > a > span > svg {
+  zoom: 1.2;
+}
+.header-menu-mobile {
+  display: none;
+  color: #fff;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  @include mobile {
+    display: block;
+  }
+}

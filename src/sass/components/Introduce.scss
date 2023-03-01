@@ -1,0 +1,70 @@
+.elementor-introduce {
+  &__left {
+    width: 100%;
+    padding: 12px;
+    margin: 10px;
+    max-width: 565px;
+    margin-top: 150px;
+    @include tablet {
+      margin-top: 70px;
+    }
+    &__content {
+      &--title {
+        color: #fff;
+        margin-bottom: 36px;
+      }
+      &--desc {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        color: #b3b3b3;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 36px;
+      }
+      &--button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        color: #332200;
+        margin-top: 20px;
+        border-radius: 5px;
+        padding: 16px 32px;
+        margin-bottom: 136px;
+        gap: 10px;
+        background: linear-gradient(180deg, #ffbb00 0%, #f2a60c 100%);
+        @include tablet {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  &__right {
+    position: relative;
+    width: 100%;
+    &-image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      @include mobile {
+        position: relative;
+      }
+      @include tablet {
+        top: 50px;
+      }
+      &-info {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

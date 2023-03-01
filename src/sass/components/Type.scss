@@ -1,0 +1,49 @@
+.elementor-type-inner__content {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ededed;
+  border-top: none;
+
+  @include tablet {
+    border: 1px solid #ededed !important;
+  }
+  &:nth-child(1) {
+    border-left: none;
+    border-top: none;
+  }
+  &:nth-child(2),
+  &:nth-child(3) {
+    border-top: none;
+  }
+
+  &:nth-child(4) {
+    border-top: none;
+  }
+  &:nth-child(5) {
+    border-left: none;
+    border-bottom: none;
+  }
+  &:nth-child(6),
+  &:nth-child(7),
+  &:nth-child(8) {
+    border-bottom: none;
+  }
+
+  &:nth-child(4),
+  &:nth-child(8) {
+    border-right: none;
+  }
+  @include mobile {
+    border: 1px solid #ededed;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &--img {
+    margin: 45px 40px;
+    line-height: normal;
+  }
+}

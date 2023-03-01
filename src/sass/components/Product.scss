@@ -1,0 +1,42 @@
+.product-item {
+  text-align: center;
+  padding: 0 15px;
+  .product-item-inner {
+    text-align: left;
+    margin-top: 8px;
+    @include mobile {
+      margin: 15px 0;
+    }
+    &--title {
+      display: flex;
+      align-items: center;
+      span {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        margin-left: 8px;
+        line-height: 40px;
+        color: #121212;
+      }
+      img {
+        margin-left: 4px;
+      }
+    }
+    &--price {
+      margin-left: 25px;
+
+      span {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #595959;
+      }
+    }
+  }
+}

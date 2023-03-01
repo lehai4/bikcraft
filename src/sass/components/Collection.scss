@@ -1,0 +1,85 @@
+.elementor-collection-right {
+  width: inherit;
+  position: relative;
+  @include mobile {
+    margin-top: -10px;
+  }
+  @include tablet {
+    margin-top: -8px;
+  }
+  &-inner {
+    width: inherit;
+    &--img {
+      position: absolute;
+      inset: 0;
+      @include mobile {
+        position: relative;
+      }
+      @include tablet {
+        position: relative;
+      }
+      img {
+        width: 680px;
+        height: 567px;
+        @include tablet {
+          width: 100%;
+        }
+      }
+    }
+    &--title {
+      position: absolute;
+      top: 220px;
+      left: 80px;
+      right: 233px;
+      bottom: 96px;
+      @include tablet {
+        left: 20%;
+        right: 20%;
+        bottom: 20%;
+      }
+      @include mobile {
+        left: 50%;
+        right: 0;
+
+        transform: translate(-50%, -50%);
+      }
+
+      span {
+        font-family: "Merriweather", serif;
+        font-style: italic;
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 45px;
+        color: #332200;
+        @include mobile {
+          font-size: 20px;
+        }
+      }
+    }
+    &--author {
+      position: absolute;
+      left: 80px;
+      bottom: 50px;
+      @include tablet {
+        left: 20%;
+        right: 20%;
+        bottom: 20%;
+      }
+      @include mobile {
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        right: 0;
+      }
+
+      span {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        color: #a66f00;
+      }
+    }
+  }
+}

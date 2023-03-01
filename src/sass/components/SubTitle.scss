@@ -1,0 +1,27 @@
+.elementor-inner {
+  display: flex;
+  vertical-align: top;
+  align-items: center;
+  padding: 0 12px;
+  margin: 0 5px;
+  @include mobile {
+    justify-content: center;
+  }
+  &-subtitle {
+    @include tablet {
+      margin: 0 15px;
+    }
+    h4 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 62px;
+      line-height: 72px;
+      text-transform: lowercase;
+      color: #000000;
+      @include mobile {
+        text-align: center;
+      }
+    }
+  }
+}

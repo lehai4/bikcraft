@@ -1,0 +1,80 @@
+.elementor-element-section1 {
+  background-color: #000;
+}
+.elementor-element-section2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 220px 0px 0px 0px;
+  @include mobile {
+    padding: 100px 0 0 0 !important;
+  }
+  @include tablet {
+    padding: 130px 0 0 0;
+  }
+}
+.elementor-element-section3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 18px 0px 0px 0px;
+}
+.elementor-element-section4 {
+  background-color: #000;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin: 214px 0px 0px 0px;
+  @include mobile {
+    margin: 90px 0 0 0 !important;
+  }
+  @include tablet {
+    margin: 100px 0 0 0 !important;
+  }
+}
+.elementor-element-section5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 200px 0px 0px 0px;
+  @include mobile {
+    padding: 90px 0 0 0 !important;
+  }
+  @include tablet {
+    padding: 100px 0 0 0;
+  }
+}
+.elementor-element-section6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 60px 0px 0px 0px;
+  @include mobile {
+    padding: 30px 0 0 0 !important;
+  }
+  @include tablet {
+    padding: 50px 0 0 0;
+  }
+}
+.elementor-element-section7 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 120px 0px 0px 0px;
+  @include mobile {
+    padding: 60px 0 0 0 !important;
+  }
+  @include tablet {
+    padding: 90px 0 0 0;
+  }
+}
+.elementor-element-section8 {
+  background-color: #121212;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 60px 0px 0px 0px;
+  margin-top: -8px;
+  @include tablet {
+    margin-top: -8px;
+  }
+}
+.elementor-element-section9 {
+  background-color: #121212;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 60px 0px 120px 0px;
+}
